@@ -1,0 +1,11 @@
+Drug Name,SMILES,Indication
+Tamoxifen,CCN(CC)CCOC1=CC=C(C=C1)C(=C(C2=CC=CC=C2)C3=CC=CC=C3)Cl,Breast cancer treatment
+Imatinib,CN1CCN(CC1)CC2=CC=C(C=C2)C(=O)NC3=C(C=CC(=C3)NC(=O)C4=CC=C(C=C4)CN5CCN(CC5)C)C(F)(F)F,Chronic myelogenous leukemia
+Aspirin,CC(=O)OC1=CC=CC=C1C(=O)O,Pain relief and inflammation
+Paracetamol,CC(=O)NC1=CC=C(C=C1)O,Pain relief and fever reduction
+Doxorubicin,COC1=C(C=C2C(=C1)C(=O)C3=C(C2=O)C(=CC=C3O)O)O,Cancer chemotherapy
+Cisplatin,[NH3]Cl[Pt]Cl[NH3],Various cancers including testicular and ovarian cancer
+Metformin,CN(C)C(=N)NC(=N)N,Type 2 diabetes
+Lisinopril,CCCCN1CCCC1C(=O)NC(CCc2ccccc2)C(=O)O,Hypertension
+Carboplatin,N[Pt]1(N)OC(=O)C2(CCC2)C(=O)O1,Ovarian cancer and lung cancer
+Fluorouracil,FC1=CNC(=O)NC1=O,Colorectal cancer and other solid tumors
