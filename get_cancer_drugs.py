@@ -85,7 +85,7 @@ def query_pubchem_for_smiles(drug_name: str) -> Optional[str]:
         return None
 
 
-def load_drug_names_from_csv(csv_file: str, column_name: str = 'drug_name') -> List[str]:
+def load_drug_names_from_csv(csv_file: str, column_name: str = 'Drug Name') -> List[str]:
     """
     Load drug names from a CSV file.
     
@@ -99,8 +99,14 @@ def load_drug_names_from_csv(csv_file: str, column_name: str = 'drug_name') -> L
     try:
         df = pd.read_csv(csv_file)
         if column_name not in df.columns:
-            print(f"Column '{column_name}' not found. Available columns: {list(df.columns)}")
-            return []
+            # Try to find a column that might contain drug names
+            possible_columns = [col for col in df.columns if 'drug' in col.lower() or 'name' in col.lower()]
+            if possible_columns:
+                column_name = possible_columns[0]
+                print(f"Using column '{column_name}' for drug names.")
+            else:
+                print(f"Column '{column_name}' not found. Available columns: {list(df.columns)}")
+                return []
         return df[column_name].dropna().tolist()
     except Exception as e:
         print(f"Error loading CSV file: {e}")
