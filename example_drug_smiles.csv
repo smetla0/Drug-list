@@ -1,0 +1,7 @@
+Drug Name,SMILES
+aspirin,CC(=O)OC1=CC=CC=C1C(=O)O
+ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O
+acetaminophen,CC(=O)NC1=CC=C(C=C1)O
+caffeine,CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+morphine,CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)O)O[C@H]3[C@H](C=C4)O
+invalid_drug_xyz,N/A
